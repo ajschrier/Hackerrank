@@ -13,4 +13,3 @@ for i in range(n):
     d2 += a[i][n-i-1]
 
 print abs(d1 - d2)
-
