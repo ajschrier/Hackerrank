@@ -1,4 +1,5 @@
-from math import sqrt
+from math import sqrt, floor
+import numpy
 import timeit
 
 start_time = timeit.default_timer()
@@ -46,6 +47,7 @@ for testCase in cases:
         q1 = destinationCase[0]
         q2 = destinationCase[1]
         lengths.append(sqrt(((q1-p1)**2))+((q2-p2)**2))
+    print floor(numpy.mean(lengths))
     if min(lengths) > maxEuclideanLength:
         maxEuclideanLength = min(lengths)
 
