@@ -5,7 +5,11 @@ interface AdvancedArithmetic{
    int divisorSum(int n);
 }
 // Create a class that adheres to AdvancedArithmetic here
-
+class Calculator implements AdvancedArithmetic {
+    public static int divisorSum(int n) {
+        
+    }
+}
 // end exercise
 class Solution {
 
