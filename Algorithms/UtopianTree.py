@@ -11,7 +11,7 @@ def treeHeight(cycles):
     if cycles == 0:
         return height
     else:
-        for cycle in range(0, cycles):
+        for cycle in range(cycles):
             if cycle % 2 == 0:
                 height *= 2
             else:
