@@ -13,7 +13,10 @@ class Solution:
 # Beginning of exercise
 
     def insert(self, head, data):
-        pass
+        current = head
+        while current:
+            current = current.next
+        current.next = Node(data)
 
 # End of exercise
 
