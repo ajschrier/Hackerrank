@@ -14,17 +14,7 @@ class Solution:
 
     def insert(self, head, data):
         node = Node(data)
-        if head is None:
-            head = node
-        elif head.next is None:
-            head.next = node
-        else:
-            head = head.next
-            while head.next is not None:
-                head = head.next
-            head.next = node
-
-
+        head = node
 
 # End of exercise
 
@@ -35,3 +25,4 @@ for i in range(T):
     data = int(input())
     head = mylist.insert(head, data)
 mylist.display(head)
+print
