@@ -13,9 +13,14 @@ class Solution:
 # Beginning of exercise
 
     def insert(self, head, data):
-        node = Node(data)
-        head = node
-
+        if head is None:
+            return Node(data)
+        elif head.next is None:
+            head.next = Node(data)
+            return head
+        else:
+            self.insert(head.next, data)
+            return head
 # End of exercise
 
 mylist = Solution()
