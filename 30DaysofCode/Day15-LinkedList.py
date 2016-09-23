@@ -13,10 +13,18 @@ class Solution:
 # Beginning of exercise
 
     def insert(self, head, data):
-        current = head
-        while current:
-            current = current.next
-        current.next = Node(data)
+        node = Node(data)
+        if head is None:
+            head = node
+        elif head.next is None:
+            head.next = node
+        else:
+            head = head.next
+            while head.next is not None:
+                head = head.next
+            head.next = node
+
+
 
 # End of exercise
 
