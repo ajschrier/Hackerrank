@@ -1,5 +1,7 @@
 import unittest
-from .. import DesignerPDFViewer
+import sys
+sys.path.append("..")
+import DesignerPDFViewer # noqa
 
 
 class pdfSelectionTests(unittest.TestCase):
